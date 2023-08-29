@@ -1,0 +1,171 @@
+.header{
+    height:55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0 ;
+    left: 0;
+    right:0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style:solid ;
+    border-bottom-color:rgb(219, 210, 210) ;
+    z-index: 100;
+}
+
+.left-section{
+    display: flex; 
+    align-items: center;
+
+}
+
+
+
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.youtube-logo{
+    height: 20px;
+    cursor: pointer;
+}
+
+.middle-section{
+    flex: 1;
+   
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    
+}
+.search{
+    flex:1;
+    height: 36px;
+    border-radius: 2px;
+    border: 1px solid rgba(128, 128, 128, 0.336);
+    padding-left: 10px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0,0, 0.05) ;
+    
+}
+
+.search::placeholder{
+    font-family: Roboto,Arial;
+    font-size: 15px;
+
+}
+
+.search-button{
+    position: relative;
+    height:40px;
+    width: 66px;
+    background-color: rgba(182, 177, 177, 0.253);
+    border: 1px solid rgba(207, 201, 201, 0.295) ;
+    margin-left: -1;
+    margin-right: 8px;
+    cursor: pointer;
+    }
+.search-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    color:white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+}
+
+.search-button:hover .tooltip{
+    opacity: 1;
+
+}
+    
+    .voice-button{
+        position: relative;
+        height:40px;
+        width: 40px;
+        border-radius: 20px;
+        border: none;
+        background-color: rgba(184, 175, 175, 0.356);
+        cursor: pointer;
+        
+    }
+    .voice-button .tooltip{
+        position: absolute;
+        bottom: -35px;
+        background-color: rgb(136, 133, 133);
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 2px;
+        opacity: 0;
+        color: white;
+        white-space: nowrap;
+    }
+    .voice-button:hover .tooltip{
+
+        opacity: 1;
+    }
+
+
+    .search-icon{
+      
+        margin-top: 4px;
+        height: 25px;
+       
+    }
+    
+    .voice-icon{
+       
+        height: 25px;
+    }
+
+
+.right-section{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.right-section button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffff;
+    cursor: pointer;
+}
+
+.notifications-button{
+    position: relative;
+}
+
+.not-numb{
+    position: absolute;
+    background-color: rgb(190, 24, 24);
+    color: #ffff;
+    height: 15px;
+    width: 15px;   
+    border-radius:7px;
+    top:0;
+    right:0;
+  
+}
+.my-channel-image{
+    height: 30px;
+    width: 30px;
+    
+}
