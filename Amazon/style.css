@@ -5,6 +5,9 @@
 
 }
 
+.border-white:hover{
+    border: 1px solid rgb(214, 214, 214);
+}
 
 
 
@@ -22,8 +25,9 @@
     width: 100px;
 }
 
+
 .logo{
-    background-image: url("amazon_logo.png");
+    background-image: url("images/amazon_logo.png");
     height: 50px;
     width: 100px;
     background-size: cover;
@@ -168,11 +172,21 @@ font-weight: bold;
 /** hero section **/
 
 .hero-section{
-
-    background-image: url("hero_image.jpg");
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/hero_image.jpg");
     height: 380px;
     background-size: cover;
-    
+    align-items: flex-end;   
+    justify-content: center;
+}
+
+.hero-message {
+    background-color: #0f11110d;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /**box section **/
@@ -259,7 +273,7 @@ footer{
 }
 
 .logo-foot{
-    background-image: url("amazon_logo.png");
+    background-image: url("images/amazon_logo.png");
     background-size: cover;
     width: 100px;
     height: 50px;
@@ -276,4 +290,70 @@ footer{
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 3px;
+}
+
+.footpanel-4{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 100px; 
+    padding-right: 100px;
+    row-gap: 20px;
+    color: gainsboro;
+    background-color: #0f1111;
+}
+
+.footer-end{
+    background-color: #0f1111;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+@media screen and (max-width:500px) {
+    .shop-section{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 100vw;
+    }
+
+    .hero-section{
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .customer-reach{
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .panel{  
+        font-size: 10px;
+    }
+
+    .logo{
+        width: 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .nav-search input{
+        width: 20%;
+
+    }
+
+    .return-box{
+        width: 10vw;
+        font-size: 10px;
+    }
+
+    .nav-cart i{
+        width: 5px;
+    }
 }
