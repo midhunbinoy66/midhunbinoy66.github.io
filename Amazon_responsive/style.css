@@ -191,7 +191,7 @@ object-fit: cover;
 }
 .footer_two{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-evenly;
     padding-top: 50px;
     padding-bottom: 50px;
