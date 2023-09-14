@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+  name="description"
+  content="a simple clone page of instagram built using bootstrap ,it uses other techs like js ,css">
+  <title>Instgram</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary shadow border ">
+      <div class="container d.flex ">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo/Instagram_Logo_2016.svg" alt="logo" width="100" height="auto">
+        </a>
+        <div class="d-flex ">
+          <button class="navbar-nav ml-auto btn btn-primary px-4 "
+          data-bs-toggle="modal" data-bs-target="#createModalsignin"
+          >Log in </button> 
+          <button class="navbar-nav  btn btn-outline text-primary px-4" data-bs-toggle="modal" data-bs-target="#createModal">sign up </button> 
+        </div>       
+      </div>
+   </nav>   
+  </div>
+<!--Modal login start -->
+
+
+
+
+
+
+
+<div class="modal fade" id="createModalsignin" tabindex="-1" aria-labelledby="createModalLabelsignin" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title fs-5" id="createModalLabelsignin">Sign in</h2>
+        </div>
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form >
+          <input type="name" placeholder="Username" class="form-control my-3">
+          <input type="password" placeholder="password" class="form-control my-3">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal login end -->
+
+
+<!-- Modal signup-->
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title fs-5" id="createModalLabel">Sign up</h2>
+        </div>
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form >
+          <div class="row">
+            <div class="col">
+              <input type="text" placeholder="first name"class="form-control" >
+            </div>
+            <div class="col">
+              <input type="text" placeholder="surname"class="form-control" >
+            </div>
+          </div>
+          <input type="email" placeholder="email" class="form-control my-3">
+          <input type="password" placeholder="new password" class="form-control my-3">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Signup</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!----modal end-->
+
+
+  <div class="container my-3 d-flex align-items-center justify-content-center">
+    <div class="row ">
+      <div class="col-4 col-md-2">
+        <img src="images/logo/imdb-logo.jpg " class="img-fluid rounded-pill w-100 h-auto "  alt="image-story">
+      </div>
+      <div class=" col col-md-6">
+        <div class="fw-bold">Imdb</div>
+        <div class="d-sm-inline-block">Community</div>
+        <h6>Your friend that binge-watches everything and knows a lot about movies. Looking for more info? Click that link 👇</h6>
+        <button class="btn btn-light px-3 border rounded-2">link</button>
+
+      </div>
+     
+    </div>
+
+    </div>
+
+
+
+
+  <div class="container my-4">
+        <div class="row">
+        <div class=" col ">
+            <img src="images/stories/story_1.jpg" class="img-fluid w-100 h-auto rounded-pill  " alt="image-story">            
+        </div>
+        <div class="col ">
+          <img src="images/stories/story_2.jpg" class="img-fluid w-100 h-auto rounded-pill" alt="image-story">
+        </div>
+        <div class=" col">
+          <img src="images/stories/story_3.jpg" class="img-fluid w-100 h-auto rounded-pill" alt="image-story">
+          
+        </div>
+        <div class=" col">
+          <img src="images/stories/story_4.jpg" class="img-fluid w-100 h-auto rounded-pill" alt="image-story">
+          
+        </div>
+        <div class=" col">
+          <img src="images/stories/story_5.jpg" class="img-fluid w-100 h-auto rounded-pill" alt="image-story">
+         
+        </div>
+        <div class=" col">
+          <img src="images/stories/story_5.jpg" class="img-fluid w-100 h-auto rounded-pill" alt="image-story">
+         
+        </div>
+        </div>
+  </div>
+
+
+  <div class="container  border border-light  my-1 ">
+    <div class="row">
+      <div class="col text-center text-secondary d-flex justify-content-center"><p class="mx-1">7,199 </p>
+        <p>posts</p></div>
+      <div class="col text-center text-secondary d-flex justify-content-center"><p class="mx-1">3.3M </p>
+      <p>followers</p></div>
+      <div class="col text-center text-secondary d-flex justify-content-center"><p class="mx-1">789 </p>
+        <p>Following</p></div>
+    </div>
+  </div>
+
+
+
+
+<div class="container  border-top-1 shadow">
+  <ul class="nav justify-content-center">
+    <li class="nav-item d-flex align-items-center">
+      <i class="fa-solid fa-table-cells d-none d-md-block "></i>
+      <a class="nav-link active" aria-current="page" href="#">Posts</a>
+    </li>
+    <li class="nav-item d-flex align-items-center">
+      <i class="fa-solid fa-video d-none d-md-block"></i>
+      <a class="nav-link " href="#">Reels</a>
+    </li>
+    <li class="nav-item d-flex align-items-center">
+      <i class="fa-solid fa-book d-none d-md-block"></i>
+      <a class="nav-link" href="#">Guides</a>
+    </li>
+    <li class="nav-item d-flex align-items-center">
+      <i class="fa-regular fa-user d-none d-md-block"></i>
+      <a class="nav-link" href="#">Tagged</a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+<div class="container feed">
+  <div class="row gy-1 my-1 g-1">
+    <div class=" col-4  d-flex align-items-stretch">
+      <div class="card " >
+        <img src="images/feeds/feed-1.webp" class="card-img-top img-fluid w-auto h-100 " alt="..."> 
+      </div>
+    </div>
+    <div class=" col-4 d-flex align-items-stretch">
+      <div class="card" >
+        <img src="images/feeds/feed-2.webp" class="card-img-top img-fluid  w-auto h-100 " alt="..."> 
+      </div>
+    </div>
+
+    <div class=" col-4 d-flex align-items-stretch">
+      <div class="card" >
+        <img src="images/feeds/feed-3.webp" class="card-img-top img-fluid w-auto h-100 " alt="..."> 
+      </div>
+    </div>
+
+    
+    <div class=" col-4 d-flex align-items-stretch">
+      <div class="card " >
+        <img src="images/feeds/feed-4.webp" class="card-img-top img-fluid w-auto h-100 " alt="..."> 
+      </div>
+    </div>
+
+    <div class=" col-4 d-flex align-items-stretch">
+      <div class="card" >
+        <img src="images/feeds/feed-5.webp" class="card-img-top img-fluid w-auto h-100 " alt="..."> 
+      </div>
+    </div>
+
+    <div class=" col-4 d-flex align-items-stretch">
+      <div class="card" >
+        <img src="images/feeds/feed-6.webp" class="card-img-top img-fluid  w-auto h-100 " alt="..."> 
+      </div>
+    </div>
+      
+    <div class=" col-4 d-flex align-items-stretch">
+      <div class="card view overlay" >
+        <img src="images/feeds/feed-7.webp" class="card-img-top img-fluid  w-auto h-100" alt="..."> 
+      </div>
+    </div>
+
+    <div class=" col-4 d-flex align-items-stretch">
+      <div class="card" >
+        <img src="images/feeds/feed-8.webp" class="card-img-top img-fluid  w-auto h-100" alt="..."> 
+      </div>
+    </div>
+
+    <div class=" col-4 d-flex align-items-stretch">
+      <div class="card " >
+        <img src="images/feeds/feed-9.webp" class="card-img-top img-fluid  w-auto h-100" alt="..."> 
+      </div>
+    </div>
+
+    <div class=" col-4 d-flex align-items-stretch">
+      <div class="card " >
+        <img src="images/feeds/feed-9.webp" class="card-img-top img-fluid  w-auto h-100 " alt="..."> 
+      </div>
+    </div>
+
+    <div class=" col-4 d-flex align-items-stretch">
+      <div class="card view overlay" >
+        <img src="images/feeds/feed-7.webp" class="card-img-top img-fluid  w-auto h-auto" alt="..."> 
+      </div>
+    </div>
+    
+    <div class=" col-4 d-flex align-items-stretch">
+      <div class="card" >
+        <img src="images/feeds/feed-3.webp" class="card-img-top img-fluid  w-auto h-100" alt="..."> 
+      </div>
+    </div>
+
+
+  </div>
+  
+
+</div>
+
+<div class="container shadow my-2">
+  <div class="row">
+    <div class="col d-flex align-items-start text-secondary"><p>related accounts</p></div>
+    <div class="col text-end text-primary"><p>see all</p></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col ">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="images/stories/story_1.jpg" class="w-25 rounded-pill" alt="follow-image">
+            <h6 class="card-title">taylorswiftyy</h6>
+            <p class="card-text text-secondary">Taylor swift</p> 
+            <button class="btn btn-primary alertBtn">follow</button>
+          </div>
+        </div>    
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body text-center">
+          <img src="images/stories/story_2.jpg" class="w-25 rounded-pill" alt="follow-image">
+          <h6 class="card-title">HarlowJacks</h6>
+          <p class="card-text text-secondary">Jack Harlow</p> 
+          <button class="btn btn-primary alertBtn">follow</button>
+        </div>
+      </div>    
+  </div>
+  <div class="col d-none d-md-block ">
+    <div class="card">
+      <div class="card-body text-center">
+        <img src="images/stories/story_3.jpg" class="w-25 rounded-pill" alt="follow-image">
+        <h6 class="card-title">IFASS</h6>
+        <p class="card-text text-secondary">Inernationalde</p> 
+        <button class="btn btn-primary alertBtn">follow</button>
+      </div>
+    </div>    
+</div>
+<div class="col d-none d-md-block ">
+  <div class="card">
+    <div class="card-body text-center">
+      <img src="images/stories/story_4.jpg" class="w-25 rounded-pill" alt="follow-image">
+      <h6 class="card-title">perry@806</h6>
+      <p class="card-text text-secondary">Katy Perry</p> 
+      <button class="btn btn-primary alertBtn">follow</button>
+    </div>
+  </div>    
+</div>
+
+<div class="col d-none d-lg-block ">
+  <div class="card">
+    <div class="card-body text-center">
+      <img src="images/stories/story_5.jpg" class="w-25 rounded-pill" alt="follow-image">
+      <h6 class="card-title">Modernfamy</h6>
+      <p class="card-text text-secondary">modern</p> 
+      <button class="btn btn-primary alertBtn">follow</button>
+    </div>
+  </div>    
+</div>
+<div class="col d-none d-lg-block ">
+<div class="card">
+  <div class="card-body text-center">
+    <img src="images/stories/story_6.jpg" class="w-25 rounded-pill" alt="follow-image">
+    <h6 class="card-title">taylorswiftyy</h6>
+    <p class="card-text text-secondary">Taylor swift</p> 
+    <button class="btn btn-primary alertBtn" onclick="change()">follow</button>
+  </div>
+</div>    
+</div>
+  </div>
+</div>
+
+<!------accordinon  begin-->
+
+<div class="container">
+  <div class="accordion">
+    <h2 class="accordion-title"> Frequently asked questions</h2>
+    <div class="content-container">
+      <div class="question">
+        what is instagram 
+      </div>
+      <div class="answer">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur vero sit, consequatur temporibus itaque facilis iusto mollitia alias natus eum delectus molestias sequi ratione praesentium quod eveniet repudiandae doloribus cum.
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="question">
+        How to connect with your other friends? 
+      </div>
+      <div class="answer">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur vero sit, consequatur temporibus itaque facilis iusto mollitia alias natus eum delectus molestias sequi ratione praesentium quod eveniet repudiandae doloribus cum.
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="question">
+        what is return policy 
+      </div>
+      <div class="answer">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur vero sit, consequatur temporibus itaque facilis iusto mollitia alias natus eum delectus molestias sequi ratione praesentium quod eveniet repudiandae doloribus cum.
+      </div>
+    </div>
+</div>
+
+</div>
+
+
+<!------accordinon  end-->
+<div class="container my-4 border border-top-2 ">
+  <div class="row">
+    <div class="col text-center">
+      <p class=" text-secondary">Meta About Blog Jobs Help API Privacy Terms Locations Instagram Lite Threads Contact uploading and non-users Meta Verified
+      </p>
+    </div>
+  </div>
+  <div class="col text-center text-secondary">
+    <p>
+      English (UK)
+      © 2023 Instagram from Meta</p>
+  </div>
+</div>
+  
+</div>
+
+
+
+<script>
+let accordion = document.getElementsByClassName('content-container');
+
+for(let i=0;i< accordion.length;i++) {
+   accordion[i].addEventListener('click',function(e) {
+    
+    this.classList.toggle('active');
+   })
+
+  }
+</script>
+
+<script>
+let clickBtn= document.getElementsByClassName('alertBtn');
+console.log(clickBtn);
+for(let i=0;i<clickBtn.length;i++){
+  
+clickBtn[i].addEventListener('click', function(){
+  if(clickBtn[i].innerHTML=== 'follow'){
+    clickBtn[i].innerHTML = 'followed';
+  }else{
+    clickBtn[i].innerHTML = 'follow';
+  }
+});
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
