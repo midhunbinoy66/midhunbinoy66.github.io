@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+  name="description"
+  content="a portfolio website which is used to introduce midhuns self.Made using hml css and javascript">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="header" id="top">
+      <div class="container">
+        <nav>
+          <h1>Midhun Binoy</h1>
+          <ul id="sidemenu">
+            <li><a href="#top" aria-label="Read more about ">Home</a></li>
+            <li><a href="#about" aria-label="Read more about ">About</a></li>
+            <li><a href="#service" aria-label="Read more about ">Services</a></li>
+            <li><a href="#portfolio" aria-label="Read more about ">Portfolio</a></li>
+            <li><a href="#blog" aria-label="Read more about ">Blog</a></li>
+            <li><a href="#contact" aria-label="Read more about ">contact</a></li>
+            
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+          <div class="header-text">
+            <p>Aspriring Programmer</p>
+            <h1>Hi, I'am <span>midhun</span> Binoy</h1>
+          </div>
+
+      </div>
+
+  </div>
+<!-----about----------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/midhun-photoaidcom-greyscale.jpg" alt="profile">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          I am midhun binoy. An aspiring web developer .I hold a bachelor of technology degree in information technology. I am presently focusing on the learning of basic website technologies. With a vision to become successful I am working on different sort of technical projects.
+        </p>
+        <div class="tab-titles ">
+          <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>HTML/CSS</span><br>designing web/app interefacs</li>
+            <li><span>JAVA</span><br>Programming skills -basic</li>
+            <li><span>Java script</span><br>Beginner level experties</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>IIT Mumbai</span><br>Drone technology seminar atendeee</li>
+            <li><span>Internship</span><br>Mysore based company</li>
+            <li><span>Kerala gov disaster aleviation</span><br>Ground level communication and people management</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2020</span><br>Cochin university of scienec and technology</li>
+            <li><span>2015</span><br>GHSS PANAMARAM-Plus two </li>
+            <li><span>2013</span><br>St hss nadavayal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------services------------------>
+<div class="services" id="service">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <h2>Web design </h2>
+        <p> As an aspring web developer,I try to learn all the necessery fundamnetals of the selected language.currenlty i am capable to design front end using html and css.Recent projects of youtube clone shows the improvement that i have made.</p>
+        <a href="" aria-label="Read more about ">Learn more</a>
+      </div>
+      <div>
+        <h2>Graphic designer</h2>
+        <p>Graphic designing has always been a passion for me.From young days drawing  things were nothing short of habit.I am able to design posters ,templates with adobe photoshope,illustrator etc.My works includ short films that published in youtube.</p>
+        <a href="" aria-label="Read more about ">Learn more</a>
+      </div>
+      <div>
+        <h2>Motion Graphics</h2>
+        <p>Graphic designing is complemented with the advanced motion graphic skills.Comfortable with both after effects and davinci resolve.Completed multiple animation works for clients like colleges, youtubers </p>
+        <a href="" aria-label="Read more about ">Learn more</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!------Portfolio------------------>
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My works</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work-1.png" alt="work">
+        <div class="layer">
+          <h3>Youtbue Clone using HTML</h3>
+          <p>clone of youtube</p>
+          <a href="https://midhunbinoy66.github.io/Project_one/"  target="_blank" aria-label="Read more about ">click me</a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-2.png" alt="work">
+        <div class="layer">
+          <h3>Amazon website</h3>
+          <p>Amazon landing using html</p>
+          <a href="https://midhunbinoy66.github.io/Amazon_responsive/"  target="_blank" aria-label="Read more about ">click me</a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-3.png" alt="work">
+        <div class="layer">
+          <h3>Social media app</h3>
+          <p>Instgram clone</p>
+          <a href="https://midhunbinoy66.github.io/Instagram-reponsive/" aria-label="Read more about ">click me</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<!------blog------------------>
+<div id="blog">
+  <div class="container">
+    <h1 class="sub-title">My Blogs</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/blog1.png" alt="blog">
+        <div class="layer">
+          <h3>Gray is the colour</h3>
+          <p>life lessons</p>
+          <a href="https://viperblaster.blogspot.com/2023/09/dlemma-gray-is-color-ethical-dilemma.html"  target="_blank" aria-label="Read more about ">click me</a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/blog2.jpg" alt="blog">
+        <div class="layer">
+          <h3>Mimalism-explained</h3>
+          <p>key to a simple life</p>
+          <a href="https://viperblaster.blogspot.com/2023/09/minimalism-is-considered-beneficial-for.html"  target="_blank" aria-label="Read more about " >click me</a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/blog3.png" alt="blog">
+        <div class="layer">
+          <h3>Moores law in 60 sec</h3>
+          <p>death of trasnsistors</p>
+          <a href="https://viperblaster.blogspot.com/2023/09/moores-law-moores-law-is-observation.html" target="_blank" aria-label="Read more about ">click me</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+<!-----Contact-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact me</h1>
+        <p>midhunbinoy66@gmail.com</p>
+        <p>9656305170</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"  aria-label="Read more about "><i class="fa-brands fa-facebook" ></i></a>
+          <a href="https://www.twitter.com/" target="_blank" aria-label="Read more about " ><i class="fa-brands fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Read more about "><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="Read more about "><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form action="" name="submit-to-google-sheet" id="form">
+              <div class="input-group">
+                <input type="text" name="Name" placeholder="your name" id="name"  >
+                <span id="name-error"></span>
+              </div>
+              <div class="input-group">
+                <input type="email" name="email" placeholder="your email" id="email" >
+                <span id="email-error"></span>
+              </div>
+              <div class="input-group">
+                <textarea name="Message"   rows="6" placeholder="message" id="text"></textarea >
+                  <span id="text-error"></span>
+              </div>
+                
+              <button type="submit" class="btn" >submit</button>
+              <span id="submit-error"></span>
+              
+        </form>
+       
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+
+<script>
+  let tablinks = document.getElementsByClassName('tab-links');
+  let tabcontents = document.getElementsByClassName('tab-contents');
+
+
+  function opentab(tabname) {
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+  }
+
+
+  
+  let sidemenu=document.getElementById('sidemenu');
+  function openmenu(){
+    sidemenu.style.right="0";
+  }
+  function closemenu(){
+    sidemenu.style.right="-200px";
+  }
+
+</script>
+
+
+
+
+
+<script>
+const name=document.getElementById('name');
+const email=document.getElementById('email');
+const text=document.getElementById('text');
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyFJmINbsvzQdeFFUFhScc6yqXV5YoeY0d5b0yCC1ibro0ZC9tDv8ZIh8FyWclPR9UQCQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+
+
+  form.addEventListener('submit', e => {    
+    let message =[]
+    if(name.value === '' || name.value == null){
+      message.push('Name is required');
+    }
+
+    if(name.value.length <3 || name.value.length>10){
+
+     message.push('Name must be between 3 and 10 characters');
+    }
+
+    if(email.value === '' || email.value == null){
+      message.push('Email is required');
+    }
+    if(text.value === '' || text.value == null){
+      message.push('Message is required');
+    }
+    if(text.value.length<10){
+      message.push('Message must be at least 10 characters');
+    }
+
+    if(message.length > 0){
+      e.preventDefault()
+      alert(message);
+    }
+    else{
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => { 
+          setTimeout(function(){
+
+          },5000)
+          form.reset();
+
+      })
+      .catch(error => console.error('Error!', error.message))
+  }
+      
+    }
+    )
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
